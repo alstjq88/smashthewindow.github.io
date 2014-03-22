@@ -1,0 +1,181 @@
+/*
+font-family: 'PT Sans', sans-serif;
+font-family: 'PT Sans Narrow', sans-serif;
+font-family: 'PT Serif', serif;
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: 'PT Serif', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+a {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.bg {
+    position:fixed;
+    width:100%;
+    height:650px;
+    z-index:-100;
+}
+
+.bg > div {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center center;
+}
+
+.bg-normal {
+    z-index:10;
+    background-image:url('/background.jpeg');
+}
+
+.bg-blur {
+    z-index:20;
+    background-image:url('/background_blur.jpeg');
+    opacity:0;
+}
+
+.wrapper {
+    z-index:2000;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper header {
+    position:relative;
+    width:100%;
+    height:650px;
+}
+
+.slogan-holder {
+    position:relative;
+    width:100%;
+    height:500px;
+}
+
+.nav-holder {
+    position:relative;
+    width:100%;
+    height:60px;
+}
+
+ul.nav {
+    width:640px;
+    padding: 20px 0 20px 0;
+    height:60px;
+    margin:0 auto;
+    border-top:2px solid #dededc;
+    list-style:none;
+    text-align:center;
+}
+
+ul.nav li {
+    display:inline-block;
+    width: 200px;
+}
+
+ul.nav li a {
+    text-decoration:none;
+    background: none;
+    border: none;
+    color:#fff;
+    font-size:16px;
+}
+
+ul.nav li a:link, 
+ul.nav li a:hover,
+ul.nav li a:visited,
+ul.nav li a:active {
+    background: none;
+    border: none;
+}
+
+ul.nav li a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    min-height:2000px;
+    background-color:#fff;
+}
+
+.disable-pointer-events {
+    pointer-events:none!important;
+}
+
+.pic {
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+    margin-top: -60px;
+    border: 3px solid #fff;
+}
+
+.dark {
+    background-color: rgb(230,230,230);
+}
+
+/*
+.divider {
+    border-right: 1px solid rgb(150,150,150);
+    min-height: 250px;
+}
+*/
+
+.proj-img {
+    width: 100%;
+}
+
+.col-sm-6 {
+    padding-bottom: 20px;
+}
+
+.contact-btn {
+    width: 100%;
+    text-align: center;
+}
+
+.contact-btn a {
+    color: rgb(150,150,150);
+}
+
+.contact-btn a:hover {
+    color: rgb(100,100,100);
+}
+
+.contact-btn .fa {
+    font-size: 200px;
+}
+
+/* Sticky footer */
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin-bottom: 100px;
+}
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-top: 12px;
+    height: 100px;
+    background-color: rgb(50,50,50);
+    color: white;
+}
